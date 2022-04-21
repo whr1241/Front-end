@@ -6,29 +6,35 @@
     <meta charset="UTF-8"> <!--字符编码设置-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--让 IE 使用最新版本渲染页面并且提高其他浏览器的性能-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--设置页面的初始缩放比例-->
+    <meta name="author" content="Haoran Wang">
+    <meta name="description" content="前端学习test">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <link rel="icon" href="./images/favicon.ico">
     <title>第一个html文件</title>
-
-    <style type="text/css">
-
+    <base href="./source/" target="_blank">  <!-- 使用 <base> 定义页面中所有链接默认的链接目标地址 -->
+    <!--<link> 标签通常用于链接到样式表: -->
+    
+    <!-- style定义了HTML文档的样式文件 -->
+    <style type="text/css"> 
     h1 {color:red;}
     h2 {color:green;}
     p {color:blue;}
-
     a:link {color:#000000;}      /* 未访问链接*/
     a:visited {color:#00FF00;}  /* 已访问链接 */
     a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
     a:active {color:#0000FF;}  /* 鼠标点击时 */
-    
     ul.a {list-style-type:square;}  /* 列表 */
-
     </style>
-    <!--、CSS、<title>, <style>, <meta>, <link>, <script>, <noscript> 和 <base>-->
+
+    <!-- script定义了客户端的脚本文件 -->
+
 </head>
 
 
 
 <body style="background-color:rgb(211, 232, 237);">
 
+    <section>
     <h1>我的第一个文章标题</h1>
     <p><b>我的第一个段落</b></p>
 
@@ -42,7 +48,7 @@
     <a href="https://whr1241.github.io/" target="_blank" style="text-decoration:none;">我的个人网站链接</a> <br/>
 
     <img src="./images/SCNU.jpg" alt="木棉花" width="200" height="200" > <br/>  <!--插入图片-->
-
+    </section>
 
 
     <!--JavaScript代码-->
@@ -114,10 +120,11 @@
     </script> 
 
     <!--播放音频-->
+    <p><b>最喜欢的一个卡农版本</b></p>
     <audio controls>
         <source src="horse.ogg" type="audio/ogg">
         <source src="./images/Mon - 卡农 (Canon).mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
-      </audio>
+    </audio>
 </body>
 </html>
